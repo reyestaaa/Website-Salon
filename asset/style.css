@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.6rem;
+  background-color: white;
+}
+
+nav h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+nav .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+nav .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav .sidenav a:hover {
+  color: #f1f1f1;
+}
+
+nav .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  nav .sidenav {
+    padding-top: 15px;
+  }
+  nav .sidenav a {
+    font-size: 18px;
+  }
+}
+
+nav span {
+  position: absolute;
+  left: 95%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+header {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 80vh;
+}
+
+header .text {
+  position: absolute;
+  left: 23%;
+  top: 55%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header .text h1 {
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 12px;
+  font-size: 7rem;
+  font-weight: lighter;
+}
+
+header .text p {
+  word-spacing: 4px;
+  font-size: 20px;
+  margin-bottom: 3em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header .text button {
+  background-color: #F7D2BE;
+  font-weight: bold;
+  font-size: 17px;
+  border: none;
+  width: 150px;
+  height: 40px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  top: 80%;
+  padding: 50px;
+}
+
+.grid .cardText-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid .cardText-image .text-card h1 {
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 20px;
+}
+
+.grid .cardText-image .text-card hr {
+  margin-bottom: 10px;
+  background-color: black;
+  height: 4px;
+  width: 30%;
+  border: 0;
+}
+
+.grid .cardText-image .text-card p {
+  font-family: 'Montserrat', sans-serif;
+  word-spacing: 2px;
+  font-weight: 400;
+}
+
+.advanced {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 200%;
+  padding: 3rem;
+}
+
+.advanced .adtext {
+  -webkit-transform: translate(5%, 30%);
+          transform: translate(5%, 30%);
+}
+
+.advanced .adtext h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.advanced .adtext hr {
+  margin-bottom: 50px;
+  background-color: black;
+  height: 4px;
+  width: 20%;
+  border: 0;
+}
+
+.advanced .adtext p {
+  font-family: 'Montserrat', sans-serif;
+  word-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.advanced .adtext a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.advanced .adtext a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  top: 100%;
+}
+
+.advanced .adtext a:hover {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */
