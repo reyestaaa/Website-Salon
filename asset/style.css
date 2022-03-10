@@ -7,6 +7,14 @@
   font-family: 'Encode Sans Expanded', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,6 +43,7 @@ nav .sidenav {
 }
 
 nav .sidenav a {
+  text-align: center;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -73,9 +82,11 @@ nav span {
 }
 
 header {
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: 100%;
-  height: 80vh;
+  height: 87vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 header .text {
@@ -114,9 +125,7 @@ header .text button {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  position: absolute;
-  top: 80%;
-  padding: 50px;
+  padding: 100px;
 }
 
 .grid .cardText-image {
@@ -129,6 +138,20 @@ header .text button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.grid .cardText-image .right {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 50px;
+}
+
+.grid .cardText-image .left {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 50px;
 }
 
 .grid .cardText-image .text-card h1 {
@@ -150,18 +173,43 @@ header .text button {
   font-weight: 400;
 }
 
+.grid .cardText-image .c1 {
+  margin-left: 55px;
+}
+
+.grid .cardText-image .c2 {
+  margin-right: 55px;
+  color: black;
+}
+
 .advanced {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  top: 200%;
   padding: 3rem;
 }
 
+.advanced .border-image .background-color {
+  background-color: #FDE9E0;
+  position: absolute;
+  top: 244%;
+  left: 15%;
+  padding: 210px;
+}
+
+.advanced .border-image .border {
+  position: relative;
+  border: 5px solid #FBD1BE;
+  padding: 30px 10px 20px 50px;
+}
+
+.advanced .border-image .border img {
+  width: 420px;
+}
+
 .advanced .adtext {
-  -webkit-transform: translate(5%, 30%);
-          transform: translate(5%, 30%);
+  -webkit-transform: translate(17%, 26%);
+          transform: translate(17%, 26%);
 }
 
 .advanced .adtext h1 {
@@ -204,5 +252,290 @@ header .text button {
 
 .advanced .adtext a:hover {
   color: red;
+}
+
+.advanceds {
+  background-color: #EAE5E9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px 0px 80px 0px;
+}
+
+.advanceds .adtexts {
+  -webkit-transform: translate(5%, 29%);
+          transform: translate(5%, 29%);
+}
+
+.advanceds .adtexts h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.4rem;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.advanceds .adtexts hr {
+  margin-bottom: 20px;
+  background-color: black;
+  height: 2px;
+  width: 10%;
+  border: 0;
+}
+
+.advanceds .adtexts p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-bottom: 40px;
+  font-size: 0.9rem;
+}
+
+.advanceds .adtexts a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  background-color: #111;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.advanceds .adtexts a:hover {
+  color: red;
+}
+
+.client {
+  padding: 5rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 70px;
+}
+
+.client h1 {
+  font-size: 3em;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.client p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.client .clientText {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.treatment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 8rem;
+}
+
+.treatment .treCard {
+  background-color: #111;
+  color: white;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  padding: 30px;
+}
+
+.treatment .treCard .border {
+  border: 1px solid white;
+  padding: 40px;
+}
+
+.treatment .treCard h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.treatment .treCard hr {
+  margin-bottom: 50px;
+  background-color: white;
+  height: 4px;
+  width: 20%;
+  border: 0;
+}
+
+.treatment .treCard p {
+  font-family: 'Montserrat', sans-serif;
+  word-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.massage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 170px;
+}
+
+.massage .mestext {
+  -webkit-transform: translate(-10%, 13%);
+          transform: translate(-10%, 13%);
+}
+
+.massage .mestext h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.massage .mestext hr {
+  margin-bottom: 50px;
+  background-color: black;
+  height: 4px;
+  width: 20%;
+  border: 0;
+}
+
+.massage .mestext p {
+  font-family: 'Montserrat', sans-serif;
+  word-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.massage .mestext a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.massage .mestext a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  top: 100%;
+}
+
+.massage .mestext a:hover {
+  color: red;
+}
+
+.massage .border-image .background-color {
+  background-color: #FDE9E0;
+  position: absolute;
+  top: 628%;
+  left: 60%;
+  padding: 200px;
+}
+
+.massage .border-image .border {
+  position: relative;
+  border: 4px solid #FBD1BE;
+  padding: 0px 0px 30px 30px;
+}
+
+.massage .border-image .border img {
+  width: 420px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 40px;
+}
+
+.contact .form {
+  background-color: #111;
+  color: white;
+  width: 55%;
+  padding: 30px;
+}
+
+.contact .form h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  font-weight: lighter;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.contact .form hr {
+  margin-bottom: 12px;
+  background-color: white;
+  height: 4px;
+  width: 20%;
+  border: 0;
+}
+
+.contact .form p {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  word-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.contact .form button {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  background-color: #F7D2BE;
+}
+
+.contact .form .form-contact {
+  margin-bottom: 7px;
+}
+
+.contact .form .form-contact input, .contact .form .form-contact textarea {
+  width: 400px;
+  padding: 10px;
+}
+
+footer {
+  padding: 8rem;
+  height: 30vh;
+  background-color: black;
+  color: white;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+footer .container .footer-text {
+  margin-right: 20%;
+}
+
+footer .container .footer-text h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-bottom: 8px;
+}
+
+footer .container .footer-text p {
+  font-family: 'Montserrat', sans-serif;
+  word-spacing: 1px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+footer .logo {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
