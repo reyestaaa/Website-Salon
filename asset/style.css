@@ -91,10 +91,8 @@ header {
 
 header .text {
   position: absolute;
-  left: 23%;
-  top: 55%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  left: 5%;
+  top: 35%;
 }
 
 header .text h1 {
@@ -144,14 +142,18 @@ header .text button {
   width: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-left: 50px;
+  margin-left: 0px;
 }
 
 .grid .cardText-image .left {
   width: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-right: 50px;
+  margin-right: 0px;
+}
+
+.grid .cardText-image .text-card {
+  padding: 20px;
 }
 
 .grid .cardText-image .text-card h1 {
@@ -173,12 +175,7 @@ header .text button {
   font-weight: 400;
 }
 
-.grid .cardText-image .c1 {
-  margin-left: 55px;
-}
-
 .grid .cardText-image .c2 {
-  margin-right: 55px;
   color: black;
 }
 
@@ -557,13 +554,172 @@ footer .logo {
   text-align: center;
 }
 
+@media screen and (max-width: 868px) {
+  .grid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding: 80px;
+  }
+  .advanced {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+  }
+  .advanced .adtext {
+    -webkit-transform: translate(5%, 10%);
+            transform: translate(5%, 10%);
+    padding: 20px;
+  }
+  .advanced .border-image .background-color {
+    display: none;
+    top: 355%;
+  }
+  .advanced .border-image .border img {
+    width: 360px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .advanceds {
+    display: -ms-grid;
+    display: grid;
+    margin-top: 200px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .advanceds .advimg img {
+    width: 330px;
+    height: 430px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .advanceds .adtexts {
+    padding: 5px;
+    -webkit-transform: translate(0%, 20%);
+            transform: translate(0%, 20%);
+    height: 430px;
+  }
+  .advanceds .adtexts h1 {
+    font-size: 40px;
+  }
+  .advanceds .adtexts p {
+    font-size: 14px;
+  }
+  .treatment {
+    margin-bottom: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-position: 50% 50%;
+    padding: 4rem;
+  }
+  .treatment .treimg img {
+    width: 300px;
+    height: 80vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .treatment .treCard {
+    padding: 17px;
+    background-color: #111;
+    color: white;
+  }
+  .treatment .treCard .border {
+    border: 1px solid white;
+    padding: 50px;
+  }
+  .treatment .treCard h1 {
+    font-size: 40px;
+  }
+  .treatment .treCard p {
+    font-size: 17px;
+  }
+  .massage {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+    margin-bottom: 100px;
+  }
+  .massage .mestext {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    padding: 40px;
+    margin-bottom: 60px;
+  }
+  .massage .border-image .background-color {
+    display: none;
+    background-color: #FDE9E0;
+    position: absolute;
+    top: 1285%;
+    left: 40%;
+    width: 300px;
+  }
+  .massage .border-image .border {
+    position: relative;
+    border: 4px solid #FBD1BE;
+    padding: 0px 0px 50px 60px;
+  }
+  .massage .border-image .border img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contact .form {
+    background-color: #111;
+    color: white;
+    width: 100%;
+    padding: 50px;
+  }
+  .contact .form form {
+    padding: 50px;
+  }
+  .contact .form h1 {
+    font-size: 3rem;
+  }
+  .contact .form hr {
+    height: 2px;
+  }
+  .contact .form p {
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  .contact .form button {
+    position: absolute;
+    left: 24%;
+  }
+  .contact .form .form-contact {
+    margin-bottom: 7px;
+  }
+  .contact .form .form-contact input, .contact .form .form-contact textarea {
+    width: 300px;
+    padding: 10px;
+  }
+  footer {
+    padding: 2rem;
+    height: 40vh;
+    background-color: black;
+    color: white;
+  }
+  footer .container {
+    margin-top: 50px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   nav span {
     left: 86%;
   }
   header .text {
-    -webkit-transform: translate(-20%, -40%);
-            transform: translate(-20%, -40%);
+    left: 7%;
+    top: 40%;
   }
   header .text h1 {
     font-size: 70px;
@@ -578,7 +734,7 @@ footer .logo {
   .grid {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-    padding: 80px;
+    padding: 100px;
   }
   .grid .cardText-image {
     display: block;
@@ -714,6 +870,9 @@ footer .logo {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     padding: 50px;
+  }
+  .treatment .treimg img {
+    width: 400px;
   }
   .massage {
     display: -ms-grid;

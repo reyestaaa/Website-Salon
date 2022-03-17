@@ -77,9 +77,8 @@ header{
     object-fit: cover;
     .text{
         position: absolute; 
-        left: 23%;
-        top: 55%;
-        transform: translate(-50%, -50%);
+        left: 5%;
+        top: 35%;
         h1{
             font-family: 'Dancing Script', cursive;
             margin-bottom: 12px;
@@ -114,14 +113,15 @@ header{
         .right{
             width: 50%;
             object-fit: cover;
-            margin-left: 50px;
+            margin-left: 0px;
         }
         .left{
             width: 50%;
             object-fit: cover;
-            margin-right: 50px;
+            margin-right: 0px;
         }
         .text-card{
+            padding: 20px;
             h1{
                 font-family: 'Dancing Script', cursive;
                 margin-bottom: 20px;
@@ -140,10 +140,10 @@ header{
             }
         }
         .c1{
-            margin-left: 55px;
+        
         }
         .c2{
-            margin-right: 55px;
+            
             color: black;
         }
     }
@@ -469,6 +469,174 @@ footer{
     }
 }
 
+@media screen and(max-width: 868px) {
+
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 80px;
+    }
+    .advanced{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        .adtext{
+            transform: translate(5%, 10%);
+            padding: 20px;
+        }
+        .border-image{
+            .background-color{
+                display: none;
+                top: 355%;
+            }
+            .border{
+                img{
+                    width: 360px;
+                    object-fit: cover;
+                }
+            }
+    
+        }
+    }
+
+    .advanceds{
+        display: grid;
+        margin-top: 200px;
+        grid-template-columns: repeat(2, 1fr);
+        .advimg{
+            img{
+                width: 330px;
+                height: 430px;
+                object-fit: cover;
+
+            }
+        }
+
+        .adtexts{
+            padding: 5px;
+            transform: translate(0%, 20%);
+            h1{
+                font-size: 40px;
+            }
+            p{
+                font-size: 14px;
+            }
+            height: 430px;
+        }
+    }
+
+    .treatment{
+        margin-bottom: 150px;
+        display: flex;
+        background-position: 50% 50%;
+        padding: 4rem;
+        .treimg{
+            img{
+                width: 300px; 
+                height: 80vh;
+                object-fit: cover;
+            }
+        }
+        .treCard{
+            padding: 17px;
+            background-color: #111;
+            color: white;
+            .border{
+                border: 1px solid rgb(255, 255, 255);
+                padding: 50px;
+            }
+            h1{
+                font-size: 40px;
+            }
+            p{
+                font-size: 17px;
+            }
+        }
+    }
+    .massage{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 50px;
+        margin-bottom: 100px;
+        .mestext{
+            transform: translate( 0%, 0%);
+            padding: 40px;
+            margin-bottom: 60px;
+        }
+        .border-image{
+            .background-color{
+                display: none;
+                background-color: #FDE9E0;
+                position: absolute;
+                top: 1285%;
+                left: 40%;
+                width: 300px;
+            }
+            .border{
+                position:relative;
+                border: 4px solid #FBD1BE;
+                padding: 0px 0px 50px 60px;
+                img{
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                }
+            }
+    
+        }
+    }
+
+    .contact{
+        .form{
+            background-color: #111;
+            color: white;
+            width: 100%;
+            padding: 50px;
+            form{
+                padding: 50px;
+            }
+            
+         h1{
+             font-size: 3rem;
+         }
+         hr{
+              height: 2px;
+         }
+         p{
+             margin-top: 10px;
+             font-family: 'Montserrat', sans-serif;
+             word-spacing: 1px;
+             font-weight: 400;
+             margin-bottom: 20px;
+             font-size: 12px;
+         }
+         button{
+             position: absolute;
+             left: 24%;
+         }
+         .form-contact{
+             margin-bottom: 7px;
+             input, textarea{
+                 width: 300px;
+                 padding: 10px;
+             }
+         }
+        }
+     }
+
+     footer{
+        padding: 2rem ;
+        height: 40vh;
+        background-color: black;
+        color: white;
+        .container{
+            margin-top: 50px;
+        }
+    }
+
+    
+
+}
+
 @media screen and (max-width: 576px) {
     nav{
         span{
@@ -477,7 +645,8 @@ footer{
     }
     header{
         .text{
-            transform: translate(-20%, -40%);
+            left: 7%;
+            top: 40%;
             h1{
                 font-size: 70px;
             }
@@ -493,7 +662,7 @@ footer{
 
     .grid{
         grid-template-columns: repeat(1, 1fr);
-        padding: 80px;
+        padding: 100px;
         .cardText-image{
            display: block;
            .right{
@@ -626,6 +795,11 @@ footer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         padding: 50px;
+        .treimg{
+            img{
+                width: 400px;
+            }
+        }
     }
     
     .massage{
